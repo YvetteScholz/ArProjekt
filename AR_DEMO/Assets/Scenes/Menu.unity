@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 233378434}
   - component: {fileID: 233378435}
   m_Layer: 5
-  m_Name: OptionMenu
+  m_Name: Kartebutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,8 +363,8 @@ RectTransform:
   - {fileID: 1644301411}
   - {fileID: 1901827104}
   - {fileID: 1035562743}
-  m_Father: {fileID: 1689407471}
-  m_RootOrder: 2
+  m_Father: {fileID: 2068906773}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 233378433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486c03f91374acb42bd8e1e254752fce, type: 3}
+  m_Script: {fileID: 11500000, guid: 6715be617eca41243b4c8dd87d67d3a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &285338727
@@ -594,7 +594,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Diese Ar-App dient dazu das Agnesviertel nicht nur in seiner heutigen Form
     kennen zulernen, sondern m\xF6chte auch Einblicke in die Zukunft und die Vergangenheit
-    schaffen."
+    schaffen.\n\nUm die App zu benutzen, musst du auf dem Hansaring, Ebertplatz, sowie
+    an der Argneskirche nach K\xF6lner Stickern ausschau halten. Die gefundenen Sticker
+    m\xFCssen an die Kamera deines Handy gehalten werden.  \n\nAm Ebertpkatz kannst
+    du drei Sticker finden, am Hansaring und an der Argneskirche jeweils einen Sticker.\n\nViel
+    Spa\xDF beim Suchen :) "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -639,7 +643,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 374
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -662,19 +666,19 @@ MonoBehaviour:
   m_margin: {x: -187.15761, y: -159.62071, z: -227.31963, w: -48.89092}
   m_textInfo:
     textComponent: {fileID: 455155222}
-    characterCount: 160
+    characterCount: 506
     spriteCount: 0
-    spaceCount: 22
-    wordCount: 23
+    spaceCount: 82
+    wordCount: 76
     linkCount: 0
-    lineCount: 3
+    lineCount: 14
     pageCount: 1
     materialCount: 2
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -938,6 +942,7 @@ GameObject:
   - component: {fileID: 587338524}
   - component: {fileID: 587338523}
   - component: {fileID: 587338522}
+  - component: {fileID: 587338525}
   m_Layer: 5
   m_Name: Kartebutton
   m_TagString: Untagged
@@ -1003,20 +1008,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 233378433}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2068906772}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 233378435}
+        m_MethodName: selectScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1061,6 +1055,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587338520}
   m_CullTransparentMesh: 0
+--- !u!114 &587338525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 587338520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6715be617eca41243b4c8dd87d67d3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &764523298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1096,7 @@ RectTransform:
   m_Children:
   - {fileID: 1684420503}
   m_Father: {fileID: 2068906773}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2480,7 +2485,6 @@ RectTransform:
   m_Children:
   - {fileID: 2130264553}
   - {fileID: 2068906773}
-  - {fileID: 233378434}
   - {fileID: 1782777865}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2520,7 +2524,7 @@ RectTransform:
   - {fileID: 564523488}
   - {fileID: 1914725999}
   m_Father: {fileID: 1689407471}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3103,6 +3107,7 @@ RectTransform:
   - {fileID: 1805510489}
   - {fileID: 587338521}
   - {fileID: 1875420009}
+  - {fileID: 233378434}
   - {fileID: 764523299}
   m_Father: {fileID: 1689407471}
   m_RootOrder: 1
